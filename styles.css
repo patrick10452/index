@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* To position the exit button */
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+.menu-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+.menu-container h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px;
+    display: block; /* Each button on its own line */
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu-container button:hover {
+    background-color: #0056b3;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    text-align: left;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#progress {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #777;
+    text-align: left;
+}
+
+#question-container {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+#question-container div {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px 0;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#next-btn {
+    margin-top: 20px;
+    background-color: #28a745;
+    display: inline-block;
+    width: auto;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+}
+
+#result-container {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+
+/* Existing CSS remains the same */
+/* Restart Button */
+#restart-btn {
+    position: fixed; /* Fixed position to keep it visible */
+    bottom: 20px;
+    left: 20px; /* Positioned on the bottom left */
+    background-color: #ffc107; /* Yellow color for restart button */
+    color: #000; /* Black text */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it's above other elements */
+    width: auto; /* Allow the button to size itself */
+}
+
+#restart-btn:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Exit Button */
+#exit-btn {
+    position: fixed; /* Fixed position to keep it visible */
+    bottom: 20px;
+    right: 20px; /* Positioned on the bottom right */
+    background-color: #dc3545; /* Red color for exit button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it's above other elements */
+    width: auto; /* Allow the button to size itself */
+}
+
+#exit-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

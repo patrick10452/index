@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur l'assurance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Screen -->
+    <div id="menu-container" class="menu-container">
+        <h1>Choisissez un type d'assurance</h1>
+        <button id="auto-insurance-btn">Assurance Auto</button>
+        <button id="house-insurance-btn">Assurance Habitation</button>
+        <button id="commercial-insurance-btn">Assurance Commercial</button>
+        <button id="all-insurance-btn">All Insurance</button>
+    </div>
+
+    <!-- Quiz Container (Hidden Initially) -->
+    <div class="quiz-container" style="display: none;">
+        <h1>Quiz sur l'assurance</h1>
+        <div id="progress">Question 1/10</div> <!-- Compteur de questions -->
+        <div id="question-container">
+            <!-- Les questions et réponses seront insérées ici dynamiquement -->
+        </div>
+        <button id="next-btn" style="display: none;">Question suivante</button>
+        <div id="result-container">
+            <!-- Le résultat final sera affiché ici -->
+        </div>
+    </div>
+
+    <!-- Restart and Exit Buttons -->
+    <button id="restart-btn" style="display: none;">Restart</button>
+    <button id="exit-btn" style="display: none;">Exit</button>
+
+    <!-- Load the main script as a module -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
